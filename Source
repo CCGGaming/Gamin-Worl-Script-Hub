@@ -1,0 +1,117 @@
+-- made by CCGGaming#5143
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Goto = Instance.new("TextButton")
+local DarkDex = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+main.BackgroundTransparency = 0.500
+main.Position = UDim2.new(0.609359086, 0, 0.675159216, 0)
+main.Size = UDim2.new(0, 369, 0, 139)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+Title.BackgroundTransparency = 0.400
+Title.Position = UDim2.new(0, 0, -0.194244608, 0)
+Title.Size = UDim2.new(0, 200, 0, 27)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Gamin Worl GUI v1 - CCG"
+Title.TextColor3 = Color3.fromRGB(28, 31, 47)
+Title.TextSize = 14.000
+
+Goto.Name = "Goto"
+Goto.Parent = main
+Goto.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+Goto.BackgroundTransparency = 0.800
+Goto.BorderSizePixel = 3
+Goto.Position = UDim2.new(0.0354838707, 0, 0.762589931, 0)
+Goto.Size = UDim2.new(0, 156, 0, 26)
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "GotoPlayer"
+Goto.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goto.TextSize = 14.000
+Goto.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+
+
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = main
+DarkDex.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+DarkDex.BackgroundTransparency = 0.800
+DarkDex.BorderSizePixel = 3
+DarkDex.Position = UDim2.new(0.0354838707, 0, 0.0647482052, 0)
+DarkDex.Size = UDim2.new(0, 156, 0, 26)
+DarkDex.Font = Enum.Font.SourceSans
+DarkDex.Text = "DarkDexV4"
+DarkDex.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkDex.TextSize = 14.000
+DarkDex.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/DarkDexV4/main/Source'))()
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = main
+Fly.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+Fly.BackgroundTransparency = 0.800
+Fly.BorderSizePixel = 3
+Fly.Position = UDim2.new(0.0354838707, 0, 0.402877688, 0)
+Fly.Size = UDim2.new(0, 156, 0, 26)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 14.000
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Fly/main/Source'))()
+end)
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TextButton.BackgroundTransparency = 0.400
+TextButton.Position = UDim2.new(0.932249308, 0, -0.179856062, 0)
+TextButton.Size = UDim2.new(0, 25, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 30.000
+TextButton.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+openmain.BackgroundTransparency = 0.500
+openmain.Position = UDim2.new(0, 0, 0.473460734, 0)
+openmain.Size = UDim2.new(0, 49, 0, 47)
+
+TextButton_2.Parent = openmain
+TextButton_2.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TextButton_2.BackgroundTransparency = 0.800
+TextButton_2.Size = UDim2.new(0, 49, 0, 47)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Open"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	main.Visible = true
+	openmain.Visible = false
+end)
