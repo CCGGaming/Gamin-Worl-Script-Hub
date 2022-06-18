@@ -6,6 +6,8 @@ local Title = Instance.new("TextLabel")
 local Goto = Instance.new("TextButton")
 local DarkDex = Instance.new("TextButton")
 local Fly = Instance.new("TextButton")
+local ChatLogger = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
@@ -80,6 +82,37 @@ Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextSize = 14.000
 Fly.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Fly/main/Source'))()
+end)
+
+ChatLogger.Name = "Chat Logger"
+ChatLogger.Parent = main
+ChatLogger.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ChatLogger.BackgroundTransparency = 0.800
+ChatLogger.BorderSizePixel = 3
+ChatLogger.Position = UDim2.new(0.585483909, 0, 0.0647482052, 0)
+ChatLogger.Size = UDim2.new(0, 156, 0, 26)
+ChatLogger.Font = Enum.Font.SourceSans
+ChatLogger.Text = "Chat Logs"
+ChatLogger.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatLogger.TextSize = 14.000
+ChatLogger.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Clogs/main/source'))()
+end)
+
+
+ESP.Name = "ESP"
+ESP.Parent = main
+ESP.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ESP.BackgroundTransparency = 0.800
+ESP.BorderSizePixel = 3
+ESP.Position = UDim2.new(0.585483909, 0, 0.398081541, 0)
+ESP.Size = UDim2.new(0, 156, 0, 26)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP/main/source'))()
 end)
 
 TextButton.Parent = main
