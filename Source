@@ -12,6 +12,9 @@ local ESPOff = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
+local TpSent = Instance.new("TextButton")
+local TpOres = Instance.new("TextButton")
+local TpT2 = Instance.new("TextButton")
 
 --Properties:
 
@@ -129,6 +132,51 @@ ESPOff.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESPOff.TextSize = 14.000
 ESPOff.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP-off/main/Source'))()
+end)
+
+TpSent.Name = "TpSent"
+TpSent.Parent = main
+TpSent.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpSent.BackgroundTransparency = 0.800
+TpSent.BorderSizePixel = 3
+TpSent.Position = UDim2.new(-0.411884487, 0, 0.171891063, 0)
+TpSent.Size = UDim2.new(0, 156, 0, 26)
+TpSent.Font = Enum.Font.SourceSans
+TpSent.Text = "Sentinel"
+TpSent.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpSent.TextSize = 14.000
+TpSent.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Sentinel/main/Source'))()
+end)
+
+TpT2.Name = "TpT2"
+TpT2.Parent = main
+TpT2.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpT2.BackgroundTransparency = 0.800
+TpT2.BorderSizePixel = 3
+TpT2.Position = UDim2.new(-0.411884487, 0, 0.606414914, 0)
+TpT2.Size = UDim2.new(0, 156, 0, 26)
+TpT2.Font = Enum.Font.SourceSans
+TpT2.Text = "T2Pit"
+TpT2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpT2.TextSize = 14.000
+TpT2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/T2Pit/main/source'))()
+end)
+
+TpOres.Name = "TpOres"
+TpOres.Parent = main
+TpOres.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpOres.BackgroundTransparency = 0.800
+TpOres.BorderSizePixel = 3
+TpOres.Position = UDim2.new(-0.411884487, 0, 0.398081541, 0)
+TpOres.Size = UDim2.new(0, 156, 0, 26)
+TpOres.Font = Enum.Font.SourceSans
+TpOres.Text = "Oresfall"
+TpOres.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpOres.TextSize = 14.000
+TpOres.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Oresfall/main/Source'))()
 end)
 
 TextButton.Parent = main
