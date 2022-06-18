@@ -8,6 +8,7 @@ local DarkDex = Instance.new("TextButton")
 local Fly = Instance.new("TextButton")
 local ChatLogger = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
+local ESPOff = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
@@ -34,7 +35,7 @@ Title.BackgroundTransparency = 0.400
 Title.Position = UDim2.new(0, 0, -0.194244608, 0)
 Title.Size = UDim2.new(0, 200, 0, 27)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Gamin Worl GUI v1 - CCG"
+Title.Text = "Gamin Worl GUI v1.6 - CCG"
 Title.TextColor3 = Color3.fromRGB(28, 31, 47)
 Title.TextSize = 14.000
 
@@ -74,10 +75,10 @@ Fly.Parent = main
 Fly.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
 Fly.BackgroundTransparency = 0.800
 Fly.BorderSizePixel = 3
-Fly.Position = UDim2.new(0.0354838707, 0, 0.402877688, 0)
-Fly.Size = UDim2.new(0, 156, 0, 26)
+Fly.Position = UDim2.new(0.0354839116, 0, 0.402877629, 0)
+Fly.Size = UDim2.new(0, 193, 0, 26)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "Fly"
+Fly.Text = "Fly - Alt to activate, CTRL to go faster"
 Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextSize = 14.000
 Fly.MouseButton1Down:connect(function()
@@ -108,11 +109,26 @@ ESP.BorderSizePixel = 3
 ESP.Position = UDim2.new(0.585483909, 0, 0.398081541, 0)
 ESP.Size = UDim2.new(0, 156, 0, 26)
 ESP.Font = Enum.Font.SourceSans
-ESP.Text = "ESP"
+ESP.Text = "ESP - On"
 ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESP.TextSize = 14.000
 ESP.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP/main/source'))()
+end)
+
+ESPOff.Name = "ESPOff"
+ESPOff.Parent = main
+ESPOff.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ESPOff.BackgroundTransparency = 0.800
+ESPOff.BorderSizePixel = 3
+ESPOff.Position = UDim2.new(0.588115513, 0, 0.761176765, 0)
+ESPOff.Size = UDim2.new(0, 156, 0, 26)
+ESPOff.Font = Enum.Font.SourceSans
+ESPOff.Text = "ESP - Off"
+ESPOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPOff.TextSize = 14.000
+ESPOff.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP-off/main/Source'))()
 end)
 
 TextButton.Parent = main
