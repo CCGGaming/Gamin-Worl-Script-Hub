@@ -20,7 +20,7 @@ local TpOres = Instance.new("TextButton")
 local TBA = Instance.new("TextButton")
 local openscroll = Instance.new("Frame")
 local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton_")
+local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
