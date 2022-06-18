@@ -1,20 +1,26 @@
--- made by CCGGaming#5143
+
+--Made by CCGGaming#5143
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local Goto = Instance.new("TextButton")
 local DarkDex = Instance.new("TextButton")
-local Fly = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 local ChatLogger = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
 local ESPOff = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local TpSent = Instance.new("TextButton")
-local TpOres = Instance.new("TextButton")
 local TpT2 = Instance.new("TextButton")
+local TpOres = Instance.new("TextButton")
+local TBA = Instance.new("TextButton")
+local openscroll = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton_")
 
 --Properties:
 
@@ -25,11 +31,11 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
 main.BackgroundTransparency = 0.500
-main.Position = UDim2.new(0.609359086, 0, 0.675159216, 0)
-main.Size = UDim2.new(0, 369, 0, 139)
-main.Visible = false
+main.Position = UDim2.new(0.549338758, 0, 0.673036098, 0)
+main.Size = UDim2.new(0, 443, 0, 154)
 main.Active = true
 main.Draggable = true
+main.Visible = false
 
 Title.Name = "Title"
 Title.Parent = main
@@ -38,7 +44,7 @@ Title.BackgroundTransparency = 0.400
 Title.Position = UDim2.new(0, 0, -0.194244608, 0)
 Title.Size = UDim2.new(0, 200, 0, 27)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Gamin Worl GUI v1.6 - CCG"
+Title.Text = "Gamin Worl GUI v1.9 - CCG"
 Title.TextColor3 = Color3.fromRGB(28, 31, 47)
 Title.TextSize = 14.000
 
@@ -57,7 +63,6 @@ Goto.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
-
 DarkDex.Name = "DarkDex"
 DarkDex.Parent = main
 DarkDex.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
@@ -71,6 +76,67 @@ DarkDex.TextColor3 = Color3.fromRGB(0, 0, 0)
 DarkDex.TextSize = 14.000
 DarkDex.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/DarkDexV4/main/Source'))()
+end)
+
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TextButton.BackgroundTransparency = 0.400
+TextButton.Position = UDim2.new(0.932249308, 0, -0.179856062, 0)
+TextButton.Size = UDim2.new(0, 25, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 30.000
+TextButton.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+ChatLogger.Name = "Chat Logger"
+ChatLogger.Parent = main
+ChatLogger.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ChatLogger.BackgroundTransparency = 0.800
+ChatLogger.BorderSizePixel = 3
+ChatLogger.Position = UDim2.new(0.614051938, 0, 0.0647482052, 0)
+ChatLogger.Size = UDim2.new(0, 156, 0, 26)
+ChatLogger.Font = Enum.Font.SourceSans
+ChatLogger.Text = "Chat Logs"
+ChatLogger.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatLogger.TextSize = 14.000
+ChatLogger.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Clogs/main/source'))()
+end)
+
+ESP.Name = "ESP"
+ESP.Parent = main
+ESP.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ESP.BackgroundTransparency = 0.800
+ESP.BorderSizePixel = 3
+ESP.Position = UDim2.new(0.612357676, 0, 0.398081541, 0)
+ESP.Size = UDim2.new(0, 156, 0, 26)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP - On"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP/main/source'))()
+end)
+
+
+ESPOff.Name = "ESPOff"
+ESPOff.Parent = main
+ESPOff.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ESPOff.BackgroundTransparency = 0.800
+ESPOff.BorderSizePixel = 3
+ESPOff.Position = UDim2.new(0.6140275, 0, 0.761176765, 0)
+ESPOff.Size = UDim2.new(0, 156, 0, 26)
+ESPOff.Font = Enum.Font.SourceSans
+ESPOff.Text = "ESP - Off"
+ESPOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPOff.TextSize = 14.000
+ESPOff.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP-off/main/Source'))()
 end)
 
 Fly.Name = "Fly"
@@ -88,110 +154,6 @@ Fly.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Fly/main/Source'))()
 end)
 
-ChatLogger.Name = "Chat Logger"
-ChatLogger.Parent = main
-ChatLogger.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-ChatLogger.BackgroundTransparency = 0.800
-ChatLogger.BorderSizePixel = 3
-ChatLogger.Position = UDim2.new(0.585483909, 0, 0.0647482052, 0)
-ChatLogger.Size = UDim2.new(0, 156, 0, 26)
-ChatLogger.Font = Enum.Font.SourceSans
-ChatLogger.Text = "Chat Logs"
-ChatLogger.TextColor3 = Color3.fromRGB(0, 0, 0)
-ChatLogger.TextSize = 14.000
-ChatLogger.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Clogs/main/source'))()
-end)
-
-
-ESP.Name = "ESP"
-ESP.Parent = main
-ESP.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-ESP.BackgroundTransparency = 0.800
-ESP.BorderSizePixel = 3
-ESP.Position = UDim2.new(0.585483909, 0, 0.398081541, 0)
-ESP.Size = UDim2.new(0, 156, 0, 26)
-ESP.Font = Enum.Font.SourceSans
-ESP.Text = "ESP - On"
-ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESP.TextSize = 14.000
-ESP.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP/main/source'))()
-end)
-
-ESPOff.Name = "ESPOff"
-ESPOff.Parent = main
-ESPOff.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-ESPOff.BackgroundTransparency = 0.800
-ESPOff.BorderSizePixel = 3
-ESPOff.Position = UDim2.new(0.588115513, 0, 0.761176765, 0)
-ESPOff.Size = UDim2.new(0, 156, 0, 26)
-ESPOff.Font = Enum.Font.SourceSans
-ESPOff.Text = "ESP - Off"
-ESPOff.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESPOff.TextSize = 14.000
-ESPOff.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/ESP-off/main/Source'))()
-end)
-
-TpSent.Name = "TpSent"
-TpSent.Parent = main
-TpSent.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-TpSent.BackgroundTransparency = 0.800
-TpSent.BorderSizePixel = 3
-TpSent.Position = UDim2.new(-0.411884487, 0, 0.171891063, 0)
-TpSent.Size = UDim2.new(0, 156, 0, 26)
-TpSent.Font = Enum.Font.SourceSans
-TpSent.Text = "Sentinel"
-TpSent.TextColor3 = Color3.fromRGB(0, 0, 0)
-TpSent.TextSize = 14.000
-TpSent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Sentinel/main/Source'))()
-end)
-
-TpT2.Name = "TpT2"
-TpT2.Parent = main
-TpT2.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-TpT2.BackgroundTransparency = 0.800
-TpT2.BorderSizePixel = 3
-TpT2.Position = UDim2.new(-0.411884487, 0, 0.606414914, 0)
-TpT2.Size = UDim2.new(0, 156, 0, 26)
-TpT2.Font = Enum.Font.SourceSans
-TpT2.Text = "T2Pit"
-TpT2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TpT2.TextSize = 14.000
-TpT2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/T2Pit/main/source'))()
-end)
-
-TpOres.Name = "TpOres"
-TpOres.Parent = main
-TpOres.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-TpOres.BackgroundTransparency = 0.800
-TpOres.BorderSizePixel = 3
-TpOres.Position = UDim2.new(-0.411884487, 0, 0.398081541, 0)
-TpOres.Size = UDim2.new(0, 156, 0, 26)
-TpOres.Font = Enum.Font.SourceSans
-TpOres.Text = "Oresfall"
-TpOres.TextColor3 = Color3.fromRGB(0, 0, 0)
-TpOres.TextSize = 14.000
-TpOres.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Oresfall/main/Source'))()
-end)
-
-TextButton.Parent = main
-TextButton.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
-TextButton.BackgroundTransparency = 0.400
-TextButton.Position = UDim2.new(0.932249308, 0, -0.179856062, 0)
-TextButton.Size = UDim2.new(0, 25, 0, 23)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "-"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 30.000
-TextButton.MouseButton1Down:connect(function()
-	main.Visible = false
-	openmain.Visible = true
-end)
 
 openmain.Name = "openmain"
 openmain.Parent = ScreenGui
@@ -205,10 +167,103 @@ TextButton_2.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
 TextButton_2.BackgroundTransparency = 0.800
 TextButton_2.Size = UDim2.new(0, 49, 0, 47)
 TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Open"
+TextButton_2.Text = "Open GUI"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 14.000
 TextButton_2.MouseButton1Down:connect(function()
 	main.Visible = true
 	openmain.Visible = false
+end)
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+ScrollingFrame.BackgroundTransparency = 0.400
+ScrollingFrame.Position = UDim2.new(0.434384555, 0, 0.683651805, 0)
+ScrollingFrame.Size = UDim2.new(0, 138,0, 176)
+ScrollingFrame.Draggable = true
+ScrollingFrame.Visible = false
+
+TpSent.Name = "TpSent"
+TpSent.Parent = ScrollingFrame
+TpSent.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpSent.Size = UDim2.new(0, 87, 0, 28)
+TpSent.Font = Enum.Font.SourceSans
+TpSent.Text = "Sentinel"
+TpSent.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpSent.TextSize = 14.000
+TpSent.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Sentinel/main/Source'))()
+end)
+
+
+TpT2.Name = "TpT2"
+TpT2.Parent = ScrollingFrame
+TpT2.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpT2.Position = UDim2.new(0, 0, 0.0594479814, 0)
+TpT2.Size = UDim2.new(0, 87, 0, 28)
+TpT2.Font = Enum.Font.SourceSans
+TpT2.Text = "T2Pit"
+TpT2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpT2.TextSize = 14.000
+TpT2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/T2Pit/main/source'))()
+end)
+
+
+TpOres.Name = "TpOres"
+TpOres.Parent = ScrollingFrame
+TpOres.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TpOres.Position = UDim2.new(0, 0, 0.0297239907, 0)
+TpOres.Size = UDim2.new(0, 87, 0, 28)
+TpOres.Font = Enum.Font.SourceSans
+TpOres.Text = "Oresfall"
+TpOres.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpOres.TextSize = 14.000
+TpOres.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CCGGaming/Oresfall/main/Source'))()
+end)
+
+TBA.Name = "TBA"
+TBA.Parent = ScrollingFrame
+TBA.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TBA.Position = UDim2.new(0, 0, 0.0891719759, 0)
+TBA.Size = UDim2.new(0, 87, 0, 28)
+TBA.Font = Enum.Font.SourceSans
+TBA.Text = "TBA"
+TBA.TextColor3 = Color3.fromRGB(0, 0, 0)
+TBA.TextSize = 14.000
+
+TextButton_4.Name = "TextButton_4"
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TextButton_4.Position = UDim2.new(0.630434811, 0, 0, 0)
+TextButton_4.Size = UDim2.new(0, 35, 0, 176)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Close"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+TextButton_4.MouseButton1Down:connect(function()
+	ScrollingFrame.Visible = false
+	openscroll.Visible = true
+end)
+
+openscroll.Name = "openscroll"
+openscroll.Parent = ScreenGui
+openscroll.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+openscroll.BackgroundTransparency = 0.500
+openscroll.Position = UDim2.new(0, 0, 0.573248386, 0)
+openscroll.Size = UDim2.new(0, 49, 0, 47)
+
+TextButton_3.Parent = openscroll
+TextButton_3.BackgroundColor3 = Color3.fromRGB(86, 76, 74)
+TextButton_3.BackgroundTransparency = 0.800
+TextButton_3.Size = UDim2.new(0, 49, 0, 47)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Locations"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+TextButton_3.MouseButton1Down:connect(function()
+	ScrollingFrame.Visible = true
+	openscroll.Visible = false
 end)
